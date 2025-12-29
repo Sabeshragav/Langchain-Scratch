@@ -9,7 +9,7 @@ if not os.getenv("GROQ_API_KEY"):
 
 from langchain.chat_models import init_chat_model
 
-model = init_chat_model("llama3-8b-8192", model_provider="groq")
+model = init_chat_model("openai/gpt-oss-120b", model_provider="groq")
 
 response = model.invoke("Whats the capital of Tamil Nadu")
 
