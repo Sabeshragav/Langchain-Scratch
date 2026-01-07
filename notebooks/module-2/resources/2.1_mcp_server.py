@@ -30,7 +30,7 @@ def github_file():
     Resource for accessing langchain-ai/langchain-mcp-adapters/README.md file
 
     """
-    url = f"https://raw.githubusercontent.com/langchain-ai/langchain-mcp-adapters/blob/main/README.md"
+    url = f"https://github.com/langchain-ai/langchain-mcp-adapters/blob/main/README.md"
     try:
         resp = get(url)
         return resp.text
